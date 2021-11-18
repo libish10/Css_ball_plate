@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#ball{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 100px auto;
+    position: relative;
+    animation:ballmoving 10s 1s ease infinite alternate both
+    
+}
+#ball::after{
+    content: " ";
+    position: absolute;
+    top:200px;
+    left:-49px;
+    height:50px;
+    width:300px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    animation: ballplate 10s 1s ease infinite alternate both;
+}
+
+@keyframes ballmoving {
+    10%{
+        
+        transform: translate(0px,100px);
+        background-color: salmon;
+    }
+    20%{
+        transform: translate(200px,-100px);
+        background-color: seagreen;
+    }
+    30%{
+        transform: translate(-200px,0px);
+        background-color: lightblue;
+       
+    }
+    40%{
+        transform: translate(200px,-100px);
+        background-color: lightgreen;
+    }50%{
+        transform: translate(-100px,300px);
+        background-color: lightslategray;
+    }
+    60%{
+        transform: translate(200px,-100px);
+        background-color: lime;
+    }
+    70%{
+        transform: translate(-150px,150px);
+        background-color: lightpink;
+    }
+    80%{
+        transform: translate(300px,-200px);
+        background-color: magenta;
+    }
+    90%{
+        transform: translate(-200px,100px);
+        background-color: rgb(84, 90, 170);
+    }
+100%{
+        transform: translate(300px,-100px);
+        background-color: rgb(121, 204, 27);
+    }
+
+}
+
+@keyframes ballplate {
+    10%{
+        
+        background-color: salmon;
+    }
+    20%{
+       
+        background-color: seagreen;
+    }
+    30%{
+       
+        background-color: lightblue;
+    }
+    40%{
+        
+        background-color: lightgreen;
+    }50%{
+        
+        background-color: lightslategray;
+    }
+    60%{
+        
+        background-color: lime;
+    }
+    70%{
+       
+        background-color: lightpink;
+    }
+    80%{
+       
+        background-color: magenta;
+    }
+    90%{
+        
+        background-color: rgb(84, 90, 170);
+    }
+100%{
+      
+        background-color: rgb(121, 204, 27);
+    }
+}
