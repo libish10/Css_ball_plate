@@ -70,45 +70,44 @@
     }
 
 }
-
 @keyframes ballplate {
     10%{
         
-        background-color: salmon;
+        background-color: lightslategray;
     }
     20%{
        
-        background-color: seagreen;
+        background-color:lightpink ;
     }
     30%{
        
-        background-color: lightblue;
+        background-color:magenta; 
     }
     40%{
         
-        background-color: lightgreen;
+        background-color:rgb(84, 90, 170) ;
     }50%{
         
-        background-color: lightslategray;
+        background-color: seagreen;
     }
     60%{
         
-        background-color: lime;
+        background-color: lightgreen;
     }
     70%{
        
-        background-color: lightpink;
+        background-color: lightblue;
     }
     80%{
        
-        background-color: magenta;
+        background-color: rgb(121, 204, 27); ;
     }
     90%{
         
-        background-color: rgb(84, 90, 170);
+        background-color: saddlebrown;
     }
 100%{
       
-        background-color: rgb(121, 204, 27);
+        background-color:springgreen
     }
 }
